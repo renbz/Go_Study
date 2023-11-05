@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-func main() {
+func main013() {
 
 	// 演示goto使用
 	fmt.Println("ok1")

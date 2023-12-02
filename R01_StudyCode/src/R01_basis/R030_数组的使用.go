@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main030() {
 	var numsArray01 [3]int = [3]int{1, 2, 3}
 	var numsArray02 = [3]int{1, 2, 3}
 	var numsArray03 = [...]int{1, 2, 3}

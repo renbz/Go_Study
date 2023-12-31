@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/garyburd/redigo/redis"
 	"reflect"
 )
 
@@ -18,9 +19,11 @@ func reflect01(b interface{}) {
 }
 
 func main068() {
-
-	var num int = 10
-	reflect01(&num)
-	fmt.Printf("num=", num) // num=%!(EXTRA int=20)
-
+	conn, err := redis.Dial("tcp", "82.157.50.241:6379")
+	if err != nil {
+		fmt.Println("redis.Dial err = ", err)
+		return
+	}
+	defer conn.Close()
+	fmt.Println("conn suc...", conn)
 }

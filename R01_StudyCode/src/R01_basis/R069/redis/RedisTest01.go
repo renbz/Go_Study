@@ -6,11 +6,16 @@ import (
 )
 
 func main() {
-	conn, err := redis.DiaL("tcp", "82.157.50.241:6379")
+	conn, err := redis.Dial("tcp", "82.157.50.241:6379")
 	if err != nil {
 		fmt.Println("redis.Dial err = ", err)
 		return
 	}
-	defer conn.close()
+	defer func(conn redis.Conn) {
+		err := conn.Close()
+		if err != nil {
+
+		}
+	}(conn)
 	fmt.Println("conn suc...", conn)
 }

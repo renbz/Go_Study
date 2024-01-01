@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main02() {
+func main() {
 	//先创建一个队列
 	queue := &Queue{
 		maxSize: 5,

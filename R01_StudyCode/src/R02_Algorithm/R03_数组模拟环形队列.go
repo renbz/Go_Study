@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main03() {
+func main() {
 
 	//初始化一个环形队列
 	queue := &CircleQueue{

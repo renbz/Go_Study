@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Go_Study.iml" filepath="$PROJECT_DIR$/.idea/Go_Study.iml" />
       <module fileurl="file://$PROJECT_DIR$/R01_StudyCode.iml" filepath="$PROJECT_DIR$/R01_StudyCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/R03_GoWeb.iml" filepath="$PROJECT_DIR$/R03_GoWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/R04_GoWebBookStore.iml" filepath="$PROJECT_DIR$/R04_GoWebBookStore.iml" />
     </modules>
   </component>
 </project>

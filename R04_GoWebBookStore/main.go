@@ -1,7 +1,7 @@
 package main
 
 import (
-	"R03_GoWeb/src/R00_webapp/controller"
+	"R04_GoWebBookStore/controller"
 	"net/http"
 )
 

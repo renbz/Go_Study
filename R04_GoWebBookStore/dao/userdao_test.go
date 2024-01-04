@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"R03_GoWeb/src/R00_webapp/model"
+	"R04_GoWebBookStore/model"
 	"fmt"
 	"testing"
 	"time"

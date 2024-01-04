@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"R03_GoWeb/src/R00_webapp/model"
-	"R03_GoWeb/src/R00_webapp/utils"
+	"R04_GoWebBookStore/model"
+	"R04_GoWebBookStore/utils"
 )
 
 // AddCart 向购物车表中插入购物车

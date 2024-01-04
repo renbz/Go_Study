@@ -1,6 +1,9 @@
 package dao
 
-import "R03_GoWeb/src/R00_webapp/utils"
+import (
+	"R04_GoWebBookStore/model"
+	"R04_GoWebBookStore/utils"
+)
 
 // CheckUserNameAndPassword 根据用户名和密码从数据库中查询一条记录
 func CheckUserNameAndPassword(username string, password string) (*model.User, error) {

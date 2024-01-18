@@ -3,7 +3,6 @@ package main
 import "sort"
 
 func minimumRemoval(beans []int) int64 {
-
 	n := len(beans)
 	sort.Ints(beans)
 	total := 0

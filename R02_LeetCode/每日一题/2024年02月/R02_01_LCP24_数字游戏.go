@@ -1,6 +1,9 @@
 package main
 
-import "container/heap"
+import (
+	"container/heap"
+	"sort"
+)
 
 func numsGame(nums []int) []int {
 	const mod = 1_000_000_007
@@ -20,4 +23,9 @@ func numsGame(nums []int) []int {
 		}
 	}
 	return ans
+}
+
+type hp struct {
+	sort.IntSlice     // 继承 Len, Less, Swap
+	sum           int // 堆中元素之和
 }

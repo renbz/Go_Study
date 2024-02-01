@@ -29,3 +29,17 @@ type hp struct {
 	sort.IntSlice     // 继承 Len, Less, Swap
 	sum           int // 堆中元素之和
 }
+
+func (h *hp) Push(v any) { h.IntSlice = append(h.IntSlice, v.(int)); h.sum += v.(int) }
+func (hp) Pop() (_ any)  { return } // 没用到，无需实现
+
+// pushPop 先把 v 入堆，然后弹出并返回堆顶
+// 如果 v <= 堆顶，则直接返回 v
+func (h *hp) pushPop(v int) int {
+	if h.Len() > 0 && v > h.IntSlice[0] {
+		h.sum += v - h.IntSlice[0]
+		v, h.IntSlice[0] = h.IntSlice[0], v
+		heap.Fix(h, 0)
+	}
+	return v
+}

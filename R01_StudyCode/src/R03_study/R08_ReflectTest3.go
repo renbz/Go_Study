@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/gomodule/redigo/redis"
 	"reflect"
 )
 
@@ -18,12 +17,10 @@ func reflect01(b interface{}) {
 
 }
 
-func main068() {
-	conn, err := redis.Dial("tcp", "82.157.50.241:6379")
-	if err != nil {
-		fmt.Println("redis.Dial err = ", err)
-		return
-	}
-	defer conn.Close()
-	fmt.Println("conn suc...", conn)
+func main() {
+
+	var num int = 10
+	reflect01(&num)
+	fmt.Printf("num=", num) // num=%!(EXTRA int=20)
+
 }

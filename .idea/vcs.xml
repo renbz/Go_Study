@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/R06_GoWeb_LeastMall/src/gitee.com/shirdonl/LeastMall" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/R06_GoWeb_LeastMall/src/gitee.com/shirdonl/goWebActualCombat" vcs="Git" />
   </component>
 </project>
